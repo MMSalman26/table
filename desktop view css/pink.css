@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-/* body { */
-/* min-height: 100vh; */
-/* min-width: 100vw; */
-/* } */
-
 .header {
   background: linear-gradient(to right bottom, #33001b, #d1046e);
   color: aqua;

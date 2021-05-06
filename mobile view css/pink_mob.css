@@ -16,11 +16,6 @@
   justify-content: space-between;
 }
 
-.logo {
-  padding-top: 5px;
-  padding-left: 8px;
-}
-
 .view {
   padding-top: 5px;
 }
@@ -28,7 +23,7 @@
 .view a {
   color: aqua;
   text-decoration: none;
-  padding-left: 95px;
+  padding-left: 10px;
 }
 
 .themes {
@@ -62,7 +57,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.452),
-    -10px -10px 20px rgba(245, 245, 245, 0.432);
+    -5px -5px 15px rgba(245, 245, 245, 0.432);
 }
 
 table {
@@ -107,17 +102,5 @@ table tr:hover {
 
   table {
     width: 90%;
-  }
-}
-
-@media all and (max-width: 416px) {
-  .view a {
-    padding-left: 0px;
-  }
-}
-
-@media all and (max-width: 330px) {
-  .header {
-    font-size: 0.85rem;
   }
 }
