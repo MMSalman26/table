@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body { */
+/* min-height: 100vh; */
+/* min-width: 100vw; */
+/* } */
+
+.header {
+  background: linear-gradient(to right bottom, #33001b, #ff0084);
+  color: aqua;
+  width: 100%;
+  height: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.452), -10px -10px 20px whitesmoke;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+.view {
+  padding-top: 5px;
+}
+
+.view a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.themes {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.themes label {
+  padding-right: 10px;
+}
+
+.themes select {
+}
+
+.main {
+  background: linear-gradient(to right bottom, #33001b, #ff0084);
+  min-height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.t_cont {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.452),
+    -10px -10px 20px rgba(245, 245, 245, 0.548);
+}
+
+.table {
+  color: rgb(127, 255, 165);
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: 90%;
+  font-size: 1.22rem;
+}
+
+.table caption {
+  padding: 20px 0;
+  font-size: 1.3rem;
+}
+
+.table td,
+th {
+  border: 3px solid rgb(255, 80, 255);
+}
+
+.thead tr th {
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.tbody tr td {
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+table tr:hover {
+  background: rgba(0, 0, 0, 0.534);
+  transform: scale(1.01);
+}
+
+@media all and (min-width: 900px) {
+  .table {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 584px) {
+  .thead tr th {
+    height: 0px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .tbody tr td {
+    height: 0px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .header,
+  .main {
+    width: 150vw;
+  }
+
+  .main {
+    height: 150vh;
+    position: relative;
+  }
+
+  .t_cont {
+    position: absolute;
+    top: 0px;
+    margin-top: 170px;
+  }
+}
+
+@media all and (max-width: 406px) {
+  .t_cont {
+    width: 95%;
+  }
+
+  .table {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+}
