@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+body {
+  /* overflow: hidden; */
+}
+
+.header {
+  /* background: linear-gradient(to right bottom, #000428, #023c6e); */
+  color: rgb(34, 6, 110);
+  width: 100%;
+  height: 30px;
+  box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.452), -10px -10px 20px whitesmoke;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+.view {
+  padding-top: 5px;
+}
+
+.view a {
+  color: rgb(10, 9, 87);
+  text-decoration: none;
+}
+
+.themes {
+  padding-top: 5px;
+  padding-right: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.themes label {
+  padding-right: 10px;
+}
+
+.themes a .circle {
+  margin-top: 6px;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.themes a .circle1 {
+  background: rgb(192, 17, 76);
+}
+
+.themes a .circle2 {
+  background: rgb(0, 4, 255);
+}
+
+.themes a .circle3 {
+  background: black;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #160f83, #8a1984);
+  filter: blur(400px);
+}
+
+.main {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  /* min-height: 500px; */
+}
+
+.b_cont {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  background: rgba(0, 0, 255, 0.397);
+}
+
+.box1 {
+  /* background: linear-gradient(blue, magenta); */
+  background-image: linear-gradient(326deg, #db60cb 0%, #133eb3 74%);
+
+  height: 100px;
+  width: 100px;
+  top: -9%;
+  left: -4%;
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.box2 {
+  background-image: linear-gradient(315deg, #4fe280c7 0%, #3dc0e4bb 74%);
+  height: 30px;
+  width: 30px;
+  left: 43%;
+  top: -10%;
+  border-radius: 5px;
+}
+
+.box3 {
+  background-image: linear-gradient(315deg, #961121 0%, #b91372 74%);
+
+  height: 100px;
+  width: 100px;
+  right: 5%;
+  top: 7%;
+  border-radius: 5px;
+}
+
+.box4 {
+  background-image: linear-gradient(#8406a4, #d92478cb);
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  right: 6%;
+  bottom: -8%;
+}
+
+.box5 {
+  background-image: linear-gradient(#0affff77 0%, #380036 74%);
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  left: 2%;
+  bottom: -10%;
+}
+
+.t_cont {
+  width: 90%;
+  /* min-height: 500px; */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.096);
+  border: 1px solid rgba(255, 255, 255, 0.158);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  color: rgb(47, 45, 187);
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: 90%;
+  font-size: 1.22rem;
+  position: relative;
+}
+
+.table caption {
+  padding: 20px 0;
+  font-size: 1.3rem;
+}
+
+.table td,
+th {
+  border: 3px solid rgb(119, 28, 119);
+}
+
+.thead tr th {
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.tbody tr td {
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+table tr:hover {
+  background: rgba(255, 255, 255, 0.308);
+  transform: scale(1.01);
+}
+
+@media all and (min-width: 900px) {
+  .table {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 584px) {
+  .thead tr th {
+    height: 0px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .tbody tr td {
+    height: 0px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 825px) {
+  .section,
+  .header,
+  .main {
+    width: 150%;
+  }
+
+  .header,
+  .section {
+    width: 210%;
+  }
+
+  .main {
+    top: 55%;
+    left: 90%;
+  }
+
+  .b_cont {
+    width: 130%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .box1 {
+    height: 80px;
+    width: 80px;
+    top: -9%;
+    left: -4%;
+  }
+
+  .box2 {
+    height: 30px;
+    width: 30px;
+    left: 43%;
+    top: -10%;
+  }
+
+  .box3 {
+    height: 80px;
+    width: 80px;
+    right: 5%;
+    top: 7%;
+  }
+
+  .box4 {
+    height: 80px;
+    width: 80px;
+    right: 6%;
+    bottom: -8%;
+  }
+
+  .box5 {
+    height: 80px;
+    width: 80px;
+    left: 2%;
+    bottom: -10%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .main {
+    left: 90%;
+  }
+
+  .b_cont {
+    width: 130%;
+  }
+
+  .table {
+    /* overflow: auto; */
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .main {
+    top: 65%;
+  }
+}
