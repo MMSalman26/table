@@ -157,6 +157,7 @@ section {
 
 .table {
   color: rgb(47, 45, 187);
+  /* color: rgb(104, 253, 203); */
   border-collapse: collapse;
   margin-bottom: 30px;
   width: 90%;
@@ -269,6 +270,10 @@ table tr:hover {
     width: 80px;
     left: 2%;
     bottom: -10%;
+  }
+
+  .table {
+    color: darkcyan;
   }
 }
 
