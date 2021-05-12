@@ -69,7 +69,8 @@ body {
 section {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #160f83, #8a1984);
+  /* background: linear-gradient(to bottom, #160f83, #8a1984); */
+  background: rgb(189, 212, 238);
   filter: blur(400px);
 }
 
@@ -94,9 +95,7 @@ section {
 }
 
 .box1 {
-  /* background: linear-gradient(blue, magenta); */
   background-image: linear-gradient(326deg, #db60cb 0%, #133eb3 74%);
-
   height: 100px;
   width: 100px;
   top: -9%;
@@ -126,7 +125,6 @@ section {
 
 .box4 {
   background-image: linear-gradient(#8406a4, #d92478cb);
-
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -270,10 +268,6 @@ table tr:hover {
     width: 80px;
     left: 2%;
     bottom: -10%;
-  }
-
-  .table {
-    color: darkcyan;
   }
 }
 
